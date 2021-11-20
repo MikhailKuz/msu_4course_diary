@@ -9,3 +9,6 @@
 **10/11/2021** - сделал доклад по статье «Dataset Distillation with Infinitely Wide Convolutional Networks» и законспектировал ее.
 
 **18/11/2021** - поменял тему на "Автоматическая генерация признаков на табличных данных".
+
+**20/11/2021** - законспектировал статью «Explorekit: Automatic feature generation and selection».
+
