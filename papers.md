@@ -31,10 +31,11 @@ python -m readme2tex --nocdn --output papers_v2.md --readme papers.md
 <img src="./images/2107_13034_15.png" alt="drawing" width="850"/>  
 
 ## <a name="2"/> G Katz, ECR Shin, D Song (2016) [Explorekit: Automatic feature generation and selection](http://people.eecs.berkeley.edu/~dawnsong/papers/icdm-2016.pdf)
-<img src="./images/ExploreKit_1.png" alt="drawing" width="750"/>
-<img src="./images/ExploreKit_2.png" alt="drawing" width="850"/>
-<img src="./images/ExploreKit_3.png" alt="drawing" width="850"/>
-### Feature generation operators
+<img src="./images/ExploreKit_1.png" alt="drawing" width="650"/>
+<img src="./images/ExploreKit_2.png" alt="drawing" width="950"/>
+<img src="./images/ExploreKit_3.png" alt="drawing" width="950"/>  
+
+### Feature generation operators  
 Unary operators:
 * Discretizers: used to convert continuous and datetime features into discrete (i.e. categorical) ones
 * Normalizers: used to ﬁt the scale of continuous (i.e. numeric) features to specific distributions
@@ -72,4 +73,4 @@ Meta-Features consist of:
 ### Comments
 * In the heart of selection algorithm authors use score function. We need to make sure that model is calibrated.
 
-<img src="./images/ExploreKit_4.png" alt="drawing" width="750"/>
+<img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>
