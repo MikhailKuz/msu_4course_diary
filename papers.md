@@ -77,7 +77,7 @@ Meta-Features consist of:
 
 
 ## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)
-<img align="right" width="400" src="./images/Autolearn_1.png">  
+<img align="right" width="300" src="./images/Autolearn_1.png">  
 
 **IG** - mutual information between feature and target  
 **dcor** - distance correlation:  
