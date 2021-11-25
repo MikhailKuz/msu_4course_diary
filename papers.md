@@ -99,7 +99,7 @@ Meta-Features consist of:
 <img align="left" width="450" src="./images/AutoCross_2.png">  
 
 <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
-
+  
 **Feature Set Generation**:  
  - Discretize numeric features by multiple bins size. Select half of them based on logreg's quality. *(Multi-granularity Discretization)*
  - Make all pairs on current feature set F_cur and select one feature F_sel after Feature Set Evaluation. Add F_sel to F_cur. Let's denote a set of new cross-features as F_new. *(Beam Search)*
