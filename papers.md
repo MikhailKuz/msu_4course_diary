@@ -6,6 +6,8 @@ python -m readme2tex --nocdn --output papers_v2.md --readme papers.md
 
 1. [T Nguyen, R Novak, L Xiao, J Lee (2021) Dataset Distillation with Infinitely Wide Convolutional Networks](#1)
 2. [G Katz, ECR Shin, D Song (2016) Explorekit: Automatic feature generation and selection](#2)
+3. [Kaul A, Maheshwary S, Pudi V (2017) Autolearn — Automated feature generation and selection](#3)
+
 
 ## <a name="1"/> T Nguyen, R Novak, L Xiao, J Lee (2021) [Dataset Distillation with Infinitely Wide Convolutional Networks](https://arxiv.org/abs/2107.13034)
 ### KIP method  
@@ -73,4 +75,18 @@ Meta-Features consist of:
 ### Comments
 * In the heart of selection algorithm authors use score function. We need to make sure that model is calibrated.
 
-<img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>
+<img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>  
+
+## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)  
+<img src="./images/Autolearn_1.png" alt="drawing" width="450" style="float: right;"/>
+**IG** - mutual information between feature and target  
+**dcor** - distance correlation:
+ - can capture all types of non-linear dependency  
+ - it is applicable to random vectors of arbitrary and not necessarily equal dimension  
+ - vary in [-1, 1]  
+
+**Contruct features** - fit reg on i-feature and predict j-feature, add predicted feature and j-feature - pred_f
+**Stability selection** - fit RandomizedLasso and get features based on thresholding scores
+
+### Results
+- Have 10x smaller set of generated features and +5% accuracy compared with TFC, FCTree, ExploreKit

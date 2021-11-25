@@ -12,3 +12,5 @@
 
 **20/11/2021** - законспектировал статью «Explorekit: Automatic feature generation and selection».
 
+**25/11/2021** - законспектировал статью «Autolearn — Automated feature generation and selection».
+
