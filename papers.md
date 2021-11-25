@@ -94,9 +94,9 @@ Meta-Features consist of:
 <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
 
 ## <a name="4"/> Luo Y, Wang M (2019) [Autocross: Automatic feature crossing for tabular data in real-world applications](https://arxiv.org/abs/1904.12857) 
-<img src="./images/AutoCross_1.png" alt="drawing" width="500"/>
-<img align="right" width="500" src="./images/AutoCross_3.png">
-<img align="left" width="450" src="./images/AutoCross_2.png"> 
+<img src="./images/AutoCross_1.png" alt="drawing" width="500"/>  
+<img align="right" width="500" src="./images/AutoCross_3.png">  
+<img align="left" width="450" src="./images/AutoCross_2.png">  
 
 <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
 
