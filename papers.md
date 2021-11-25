@@ -7,7 +7,7 @@ python -m readme2tex --nocdn --output papers_v2.md --readme papers.md
 1. [T Nguyen, R Novak, L Xiao, J Lee (2021) Dataset Distillation with Infinitely Wide Convolutional Networks](#1)
 2. [G Katz, ECR Shin, D Song (2016) Explorekit: Automatic feature generation and selection](#2)
 3. [Kaul A, Maheshwary S, Pudi V (2017) Autolearn — Automated feature generation and selection](#3)
-
+4. [Luo Y, Wang M (2019) Autocross: Automatic feature crossing for tabular data in real-world applications](#4)
 
 ## <a name="1"/> T Nguyen, R Novak, L Xiao, J Lee (2021) [Dataset Distillation with Infinitely Wide Convolutional Networks](https://arxiv.org/abs/2107.13034)
 ### KIP method  
@@ -54,8 +54,7 @@ Generating the Candidate Features Set:
 1. Apply the unary operators on on all non-discrete
 2. Apply binary and higher-order operators
 3. For every non-discrete feature again apply all the unary operators
-4. Union all generated features
-
+4. Union all generated features  
 
 Meta-Features consist of:  
 * **Dataset-based meta-features**:  
@@ -76,6 +75,7 @@ Meta-Features consist of:
 * In the heart of selection algorithm authors use score function. We need to make sure that model is calibrated.
 <img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>  
 
+
 ## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)
 <img align="right" width="400" src="./images/Autolearn_1.png">  
 
@@ -89,4 +89,33 @@ Meta-Features consist of:
 **Stability selection** - fit RandomizedLasso and get features based on thresholding scores  
 
 ### Results
-- Have 10x smaller set of generated features and +5% accuracy compared with TFC, FCTree, ExploreKit
+- Have 10x smaller set of generated features and +5% accuracy compared with TFC, FCTree, ExploreKit  
+
+<br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
+
+## <a name="4"/> Luo Y, Wang M (2019) [Autocross: Automatic feature crossing for tabular data in real-world applications](https://arxiv.org/abs/1904.12857) 
+<img src="./images/AutoCross_1.png" alt="drawing" width="500"/>
+<img align="right" width="500" src="./images/AutoCross_3.png">
+<img align="left" width="450" src="./images/AutoCross_2.png"> 
+
+<br />  <br />  
+
+**Feature Set Generation**:  
+ - Discretize numeric features by multiple bins size. Select half of them based on logreg's quality. *(Multi-granularity Discretization)*
+ - Make all pairs on current feature set F_cur and select one feature F_sel after Feature Set Evaluation. Add F_sel to F_cur. Let's denote a set of new cross-features as F_new. *(Beam Search)*
+
+**Feature Set Evaluation**:  
+ - Fit logreg on F_cur, refit with warm start logreg on F_new while fixing F_cur coeffs (*Field-wise LR*)
+
+**Feature Selection** *(Successive Mini-batch GD)*:
+
+<img src="./images/AutoCross_4.png" alt="drawing" width="500"/>
+
+### Results
+ - Online feature construction
+ - Most of new features are high-ordered
+ - New features are useful for nn too  
+
+<img src="./images/AutoCross_5.png" alt="drawing" width="500"/>
+
+
