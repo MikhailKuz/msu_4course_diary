@@ -78,15 +78,16 @@ Meta-Features consist of:
 <img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>  
 
 ## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)  
-<img src="./images/Autolearn_1.png" alt="drawing" width="450" style="float: right;"/>
+<img src="./images/Autolearn_1.png" alt="drawing" width="450" style="float: right;"/>  
+
 **IG** - mutual information between feature and target  
-**dcor** - distance correlation:
+**dcor** - distance correlation:  
  - can capture all types of non-linear dependency  
  - it is applicable to random vectors of arbitrary and not necessarily equal dimension  
  - vary in [-1, 1]  
 
-**Contruct features** - fit reg on i-feature and predict j-feature, add predicted feature and j-feature - pred_f
-**Stability selection** - fit RandomizedLasso and get features based on thresholding scores
+**Contruct features** - fit reg on i-feature and predict j-feature, add predicted feature and j-feature - pred_f  
+**Stability selection** - fit RandomizedLasso and get features based on thresholding scores  
 
 ### Results
 - Have 10x smaller set of generated features and +5% accuracy compared with TFC, FCTree, ExploreKit
