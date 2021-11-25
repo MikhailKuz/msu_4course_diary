@@ -91,7 +91,7 @@ Meta-Features consist of:
 ### Results
 - Have 10x smaller set of generated features and +5% accuracy compared with TFC, FCTree, ExploreKit  
 
-<br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
+<br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  
 
 ## <a name="4"/> Luo Y, Wang M (2019) [Autocross: Automatic feature crossing for tabular data in real-world applications](https://arxiv.org/abs/1904.12857) 
 <img src="./images/AutoCross_1.png" alt="drawing" width="500"/>
