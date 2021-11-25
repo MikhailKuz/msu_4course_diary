@@ -78,10 +78,9 @@ Meta-Features consist of:
 <img src="./images/ExploreKit_4.png" alt="drawing" width="450"/>  
 
 ## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)  
-
-<img src="./images/Autolearn_1.png" width="450" style="float: right;"/>
   
-
+<img style="float: right;" src="/images/Autolearn_1.png" width="450">  
+  
 **IG** - mutual information between feature and target  
 **dcor** - distance correlation:  
  - can capture all types of non-linear dependency  
