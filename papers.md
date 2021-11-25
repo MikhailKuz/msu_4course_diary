@@ -98,7 +98,7 @@ Meta-Features consist of:
 <img align="right" width="500" src="./images/AutoCross_3.png">
 <img align="left" width="450" src="./images/AutoCross_2.png"> 
 
-<br />  <br />  
+<br />  <br />  <br />  <br />  
 
 **Feature Set Generation**:  
  - Discretize numeric features by multiple bins size. Select half of them based on logreg's quality. *(Multi-granularity Discretization)*
