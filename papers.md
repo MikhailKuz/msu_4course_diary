@@ -112,7 +112,7 @@ Meta-Features consist of:
 <img src="./images/AutoCross_4.png" alt="drawing" width="500"/>
 
 ### Results
- - Online feature construction + feature hashing
+ - Online feature construction + [feature hashing](https://arxiv.org/pdf/0902.2206.pdf)
  - Most of new features are high-ordered
  - New features are useful for nn too  
 
