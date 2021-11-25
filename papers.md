@@ -79,7 +79,7 @@ Meta-Features consist of:
 
 ## <a name="3"/> Kaul A, Maheshwary S, Pudi V (2017) [Autolearn — Automated feature generation and selection](https://github.com/saket-maheshwary/AutoLearn)  
 
-<img src="./images/Autolearn_1.png" alt="drawing" width="450" style="float: right;"/>  
+<img src="./images/Autolearn_1.png" width="450" style="float: right;"/>
   
 
 **IG** - mutual information between feature and target  
