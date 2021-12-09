@@ -8,6 +8,8 @@ python -m readme2tex --nocdn --output papers_v2.md --readme papers.md
 2. [G Katz, ECR Shin, D Song (2016) Explorekit: Automatic feature generation and selection](#2)
 3. [Kaul A, Maheshwary S, Pudi V (2017) Autolearn — Automated feature generation and selection](#3)
 4. [Luo Y, Wang M (2019) Autocross: Automatic feature crossing for tabular data in real-world applications](#4)
+5. [Liu Q (2018) DNN2LR: Automatic Feature Crossing for Credit Scoring](#5)
+6. [Xie Y, Wang Z, Li Y (2021) Fives: Feature interaction via edge search for large-scale tabular data](#6)
 
 ## <a name="1"/> T Nguyen, R Novak, L Xiao, J Lee (2021) [Dataset Distillation with Infinitely Wide Convolutional Networks](https://arxiv.org/abs/2107.13034)
 ### KIP method  
@@ -119,3 +121,45 @@ Meta-Features consist of:
 <img src="./images/AutoCross_5.png" alt="drawing" width="500"/>
 
 
+## <a name="5"/> Liu Q. (2018) [DNN2LR: Automatic Feature Crossing for Credit Scoring](https://arxiv.org/abs/2102.12036) 
+<img src="./images/DNN2LR_1.png" alt="drawing" width="850"/>
+
+**Global and Local Interpretation**:  
+*Local Interpretation of Feature* - градиенты по входному представлению признака @ (его значение).T (зависит от объекта)
+*Global Interpretation of Feature* - усредненные градиенты по входному представлению признака и объектам @ (его значение).T (не зависит от объекта)
+
+**Interpretation Inconsistency** - L2-norm(Local Interpretation - Global Interpretation) (чем больше, тем больше признак находится в нелинейном отношении с другими признаками)  
+**Filtering** - бинаризация по квантилю (>= 95% -> =1)
+**Generation** - выбор 3 * |F_orig| новых признаков на основе их встречаемости (новый признак - кортеж)
+**Searching**  
+
+<img src="./images/DNN2LR_2.png" alt="drawing" width="550"/>  
+
+### Results
+ - На порядок быстрее AutoCross 
+ - Можно находить нелинейные взаимосвязи в текстах тоже
+
+<img src="./images/DNN2LR_3.png" alt="drawing" width="800"/>  
+
+
+## <a name="6"/> Xie Y, Wang Z, Li Y (2021) [Fives: Feature interaction via edge search for large-scale tabular data](https://arxiv.org/abs/2007.14573) 
+<img src="./images/Fives_1.png" alt="drawing" width="850"/>
+<img src="./images/Fives_2.png" alt="drawing" width="650"/>
+<img src="./images/Fives_3.png" alt="drawing" width="650"/>
+<img src="./images/Fives_4.png" alt="drawing" width="650"/>
+<img src="./images/Fives_5.png" alt="drawing" width="650"/>
+
+**Main idea** - Search for cross features through graph adjacency matrix learning
+**Preprocessing** - all numeric features are discretized by 10, 100, 1000 and OHE
+**Learning** - concat all node representations from last time + MLP + sigmoid + BCE
+
+### Results
+- Need to specify threshhold for binarization (phi func)
+- Temperature scaling deals with problem of ~0.5 prob before applying phi func
+- 1e-4 wd + 0.3 dropout for preventing overfitting
+- SOTA results + 1 week AB testing
+
+<img src="./images/Fives_6.png" alt="drawing" width="800"/>  
+
+### Comments
+- only LR were tested on generated features 

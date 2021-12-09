@@ -15,3 +15,4 @@
 **25/11/2021** - законспектировал статью «Autolearn — Automated feature generation and selection» и «Autocross: Automatic feature crossing for tabular data in real-world applications».
 
 
+
