@@ -129,8 +129,8 @@ Meta-Features consist of:
 *Global Interpretation of Feature* - усредненные градиенты по входному представлению признака и объектам @ (его значение).T (не зависит от объекта)
 
 **Interpretation Inconsistency** - L2-norm(Local Interpretation - Global Interpretation) (чем больше, тем больше признак находится в нелинейном отношении с другими признаками)  
-**Filtering** - бинаризация по квантилю (>= 95% -> =1)
-**Generation** - выбор 3 * |F_orig| новых признаков на основе их встречаемости (новый признак - кортеж)
+**Filtering** - бинаризация по квантилю (>= 95% -> =1)  
+**Generation** - выбор 3 * |F_orig| новых признаков на основе их встречаемости (новый признак - кортеж)  
 **Searching**  
 
 <img src="./images/DNN2LR_2.png" alt="drawing" width="550"/>  
@@ -143,15 +143,15 @@ Meta-Features consist of:
 
 
 ## <a name="6"/> Xie Y, Wang Z, Li Y (2021) [Fives: Feature interaction via edge search for large-scale tabular data](https://arxiv.org/abs/2007.14573) 
-<img src="./images/Fives_1.png" alt="drawing" width="850"/>
-<img src="./images/Fives_2.png" alt="drawing" width="650"/>
-<img src="./images/Fives_3.png" alt="drawing" width="650"/>
-<img src="./images/Fives_4.png" alt="drawing" width="650"/>
-<img src="./images/Fives_5.png" alt="drawing" width="650"/>
+<img src="./images/Fives_1.png" alt="drawing" width="650"/>
+<img src="./images/Fives_2.png" alt="drawing" width="550"/>
+<img src="./images/Fives_3.png" alt="drawing" width="550"/>
+<img src="./images/Fives_4.png" alt="drawing" width="550"/>
+<img src="./images/Fives_5.png" alt="drawing" width="550"/>
 
-**Main idea** - Search for cross features through graph adjacency matrix learning
-**Preprocessing** - all numeric features are discretized by 10, 100, 1000 and OHE
-**Learning** - concat all node representations from last time + MLP + sigmoid + BCE
+**Main idea** - Search for cross features through graph adjacency matrix learning  
+**Preprocessing** - all numeric features are discretized by 10, 100, 1000 and OHE  
+**Learning** - concat all node representations from last time + MLP + sigmoid + BCE  
 
 ### Results
 - Need to specify threshhold for binarization (phi func)
