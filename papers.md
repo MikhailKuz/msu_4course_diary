@@ -125,7 +125,7 @@ Meta-Features consist of:
 <img src="./images/DNN2LR_1.png" alt="drawing" width="850"/>
 
 **Global and Local Interpretation**:  
-*Local Interpretation of Feature* - градиенты по входному представлению признака @ (его значение).T (зависит от объекта)
+*Local Interpretation of Feature* - градиенты по входному представлению признака @ (его значение).T (зависит от объекта)  
 *Global Interpretation of Feature* - усредненные градиенты по входному представлению признака и объектам @ (его значение).T (не зависит от объекта)
 
 **Interpretation Inconsistency** - L2-norm(Local Interpretation - Global Interpretation) (чем больше, тем больше признак находится в нелинейном отношении с другими признаками)  
