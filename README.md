@@ -1,6 +1,8 @@
 # Дневник
 Большинство материалов связаны с автоматической генерацией признаков на табличных данных.  
 :memo:[article_summaries](papers.md) &nbsp;&nbsp;&nbsp; :speaking_head:[seminar_pdfs](https://github.com/MikhailKuz/msu_4course_diary/tree/master/seminar) &nbsp;&nbsp;&nbsp;  
+:blue_book:[course_work](course_paper.pdf)  &nbsp;&nbsp;&nbsp; :speaking_head:[course_presentation](presentation.pdf)
+
 
 **27/10/2021** - выбираю тему дипломной работы между дистилляцией данных и оценкой важностью признаков. Поговорил с научным руководителем.  
 
